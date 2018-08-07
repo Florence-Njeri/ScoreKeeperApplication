@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+    <string name="team_a_image">Team A Image</string>
+    <string name="score_text_view">0</string>
+    <string name="conversion_kick">Conversion Kick</string>
+    <string name="dropped_goal">Dropped Goal</string>
+    <string name="penalty_kick">Penalty Kick</string>
+    <string name="try_string">Try</string>
+    <string name="reset">Reset</string>
+    <string name="team_b_image">Team B Image</string>
+    <string name="zero">0</string>
+    <string name="reset_button">reset button</string>
+</resources>

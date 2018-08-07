@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/align_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+
+        android:orientation="horizontal">
+        <!--Team A-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="151dp"
+                android:contentDescription="@string/team_a_image"
+                android:src="@drawable/springbok" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score_text_view"
+                android:textAlignment="center"
+                android:textColor="#FFA000"
+                android:textSize="50sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#388E3C"
+                    android:onClick="tryTeamA"
+                    android:text="@string/try_string" />
+
+                <TextView
+                    android:id="@+id/try_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_margin="7dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#388E3C"
+                    android:onClick="penaltyKickTeamA"
+                    android:text="@string/penalty_kick" />
+
+                <TextView
+                    android:id="@+id/penalty_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_margin="7dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#388E3C"
+                    android:onClick="droppedGoalTeamA"
+                    android:text="@string/dropped_goal" />
+
+                <TextView
+                    android:id="@+id/dropped_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_margin="7dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="#388E3C"
+                    android:onClick="ConversionKickTeamA"
+                    android:text="@string/conversion_kick" />
+
+                <TextView
+                    android:id="@+id/conversion_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="#000"
+                    android:layout_margin="7dp"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#000" />
+        <!-- Team B-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="151dp"
+                android:contentDescription="@string/team_b_image"
+                android:src="@drawable/new_zealand" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score_text_view"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="50sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#000"
+                    android:onClick="tryTeamB"
+                    android:text="@string/try_string"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/try_B_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="#000"
+                    android:layout_margin="7dp"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#000"
+                    android:onClick="penaltyKickTeamB"
+                    android:text="@string/penalty_kick"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/penalty_B_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="#000"
+                    android:layout_margin="7dp"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#000"
+                    android:onClick="droppedGoalTeamB"
+                    android:text="@string/dropped_goal"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/dropped_B_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="#000"
+                    android:layout_margin="7dp"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:onClick="ConversionKickTeamB"
+                    android:text="@string/conversion_kick"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/conversion_B_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="#000"
+                    android:layout_margin="7dp"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8BC34A"
+        android:contentDescription="@string/reset_button"
+        android:onClick="reset"
+        android:src="@drawable/reset" />
+</RelativeLayout>
